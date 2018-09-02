@@ -24,13 +24,17 @@ class QrScanner extends Component {
   handleUrlClick = () => {
     // console.log('clicked' + this.state.result);
     const regexp =  /^(?:http(s)?:\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&'\(\)\*\+,;=.]+$/gm;
- 
+  
     if (regexp.test(this.state.result)) {
-        window.open(this.state.result);
+        // alert('Opening' + this.state.result);
+        window.open('http://' + this.state.result);
     }
     else {
         alert("Please provide a valid URL");
     }
+
+    // alert('Opening' + this.state.result);
+    // window.open(this.state.result);
  
   }
 
