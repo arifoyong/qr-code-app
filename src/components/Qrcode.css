@@ -1,0 +1,14 @@
+.qr-generator-container {
+	padding: 0.5em;
+}
+
+.qrcode-pic {
+	 text-align: center;
+	 width: 70%;
+}
+
+.input-group-text {
+	background-color: #DCDCDC;
+}
+
+
