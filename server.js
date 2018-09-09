@@ -6,11 +6,11 @@ const port = process.env.PORT || 3001;
 const app = express();
 
 // serve static asset normally
-app.use(express.static(path.join(__dirname, 'build')));
+app.use(express.static(path.join(__dirname, '/build')));
 
 // handle all routes
 app.get('*', function(req, res) {
-    res.sendFile(path.join(__dirname, 'build', 'index.html'));
+    res.sendFile(path.join(__dirname, '/build', '/index.html'));
   });
 
 
