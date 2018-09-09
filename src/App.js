@@ -1,16 +1,10 @@
 import React, { Component } from 'react';
 // import logo from './logo.svg';
 import './App.css';
-
 import QrGenerator from './components/QrGenerator'
 import QrScanner from './components/QrScanner'
-
-
 import MyNavbar from './components/MyNavbar'
 import { Route, BrowserRouter as Router } from 'react-router-dom'
-
-
-// require('dotenv').config()
 
 class App extends Component {
   render() {
