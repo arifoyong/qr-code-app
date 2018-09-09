@@ -4,7 +4,8 @@ import brand from '../images/brand_icon.jpg'
 
 // console.log('Inside navbar.js');
 // require('dotenv').config()
-console.log("navbar foo " + process.env.REACT_APP_BASE_URI);
+console.log("Environment");
+console.log(process.env);
 
 class MyNavbar extends Component {
     render() {
