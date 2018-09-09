@@ -9,14 +9,18 @@ import QrScanner from './components/QrScanner'
 import MyNavbar from './components/MyNavbar'
 import { Route, BrowserRouter as Router } from 'react-router-dom'
 
+
+// require('dotenv').config()
+
 class App extends Component {
   render() {
     return (
-      <Router>
+      <Router basename="/qr">
       <div className="App">
           <MyNavbar />
           <Route exact path="/" component={QrGenerator}/>
           <Route path="/scan" component={QrScanner}/>
+          
       </div>
 
       </Router>
