@@ -9,7 +9,7 @@ import { Route, BrowserRouter as Router } from 'react-router-dom'
 class App extends Component {
   render() {
     return (
-      <Router basename="/qr">
+      <Router basename={process.env.REACT_APP_BASE_URI} >
       <div className="App">
           <MyNavbar />
           <Route exact path="/" component={QrGenerator}/>

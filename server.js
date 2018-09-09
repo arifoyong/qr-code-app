@@ -6,7 +6,7 @@ const port = process.env.PORT || 3001;
 const app = express();
 
 console.log(process.env);
-console.log(express.static(path.join(__dirname, 'build')));
+console.log(path.join(__dirname, 'build'));
 console.log(path.join(__dirname, 'build', 'index.html'));
 
 // serve static asset normally
