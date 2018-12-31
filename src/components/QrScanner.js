@@ -23,6 +23,7 @@ class QrScanner extends Component {
 
   handleUrlClick = () => {
     // console.log('clicked' + this.state.result);
+     // eslint-disable-next-line
     const regexp =  /^(?:http(s)?:\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&'\(\)\*\+,;=.]+$/gm;
   
     if (regexp.test(this.state.result)) {
