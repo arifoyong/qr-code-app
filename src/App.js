@@ -6,19 +6,17 @@ import QrScanner from './components/QrScanner'
 import MyNavbar from './components/MyNavbar'
 import { Route, BrowserRouter as Router } from 'react-router-dom'
 
-let base_uri = process.env.REACT_APP_BASE_URI || ""
+// let base_uri = process.env.REACT_APP_BASE_URI || ""
 
 class App extends Component {
   render() {
     return (
       <Router>
-      <div className="App">
-          <MyNavbar />
-          <Route exact path="/" component={QrGenerator}/>
-          <Route path="/scan" component={QrScanner}/>
-          
-      </div>
-
+        <div className="App">
+            <MyNavbar />
+            <Route exact path="/" component={QrGenerator}/>
+            <Route path="/scan" component={QrScanner}/>
+        </div>
       </Router>
     );
   }

@@ -40,4 +40,3 @@ class QrGenerator extends Component {
 }
 
 export default QrGenerator;
-

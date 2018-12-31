@@ -1,0 +1,16 @@
+version: '3.5'
+
+services:
+  qr-code-app:
+    container_name: qr-code-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/usr/src/app
+      #- /usr/src/app/node_modules
+    command: npm start
+    ports:
+      - '3000:3000'
+    environment:
+      - NODE_ENV=development
