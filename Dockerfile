@@ -2,8 +2,8 @@
 FROM node:8 as node_base
 
 #Set working directory
-RUN mkdir usr/src/app
-WORKDIR usr/src/app
+RUN mkdir /usr/src/app
+WORKDIR /usr/src/app
 
 #install all dependencies
 COPY package.json /usr/src/app/package.json
